@@ -10,6 +10,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.lang.Object;
+import java.util.Random;
 
 
 public class Game {
@@ -18,6 +19,7 @@ public class Game {
     public static final int WIDTH = 80;
     public static final int HEIGHT = 30;
     public static final String allInterger = "1234567890";
+    public Random ran = new Random();
 
     /**
      * Method used for playing a fresh game. The game should start from the main menu.
@@ -92,7 +94,7 @@ public class Game {
                         StdDraw.pause(3000);
                         strSeed = solicitNCharsInput2(1);
                     }
-                    int seed = Integer.valueOf(strSeed);
+                    int seed = Integer.valueOf(strSeed) + ran.nextInt(20);
                     RandomWorld worldmap = new RandomWorld(seed);
                     worldmap.NewGameprocedures();
                 }
@@ -153,7 +155,7 @@ public class Game {
     public RandomWorld LoadGame(){
             RandomWorld world = null;
         try {
-            FileInputStream fileIn = new FileInputStream("C:\\Users\\Ludwig\\Desktop\\Caveman\\Archive\\data.ser");
+            FileInputStream fileIn = new FileInputStream("C:\\Users\\Ludwig\\Desktop\\Cave-Man\\Archive\\data.ser");
             ObjectInputStream in = new ObjectInputStream(fileIn);
             world = (RandomWorld) in.readObject();
             in.close();

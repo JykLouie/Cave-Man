@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RandomWorld",
+            "request": "launch",
+            "mainClass": "CaveMan.RandomWorld",
+            "projectName": "Cave-Man_8b0ecc43"
+        },
+        {
+            "type": "java",
+            "name": "Launch Game",
+            "request": "launch",
+            "mainClass": "Core.Game",
+            "projectName": "Cave-Man_8b0ecc43"
+        },
+        {
+            "type": "java",
             "name": "Launch Game",
             "request": "launch",
             "mainClass": "Core.Game",
