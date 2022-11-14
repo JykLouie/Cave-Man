@@ -517,6 +517,7 @@ public class RandomWorld implements java.io.Serializable{
         StdDraw.setXscale(0,this.width);
         StdDraw.setYscale(0, this.height);
         StdDraw.textLeft(0, 54,"FlowerCount: " + flowerCount);
+        StdDraw.textLeft(0,53,"Press q to save and quit the game");
         StdDraw.show();
     }
     

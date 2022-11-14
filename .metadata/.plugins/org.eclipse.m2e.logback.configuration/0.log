@@ -1,0 +1,2 @@
+2022-11-14 00:10:32,005 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2022-11-14 00:10:42,116 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

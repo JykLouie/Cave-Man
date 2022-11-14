@@ -57,7 +57,7 @@ public class Game {
                     StdDraw.pause(3000);
                     strSeed = solicitNCharsInput2(1);
                 }
-                int seed = Integer.valueOf(strSeed);
+                int seed = Integer.valueOf(strSeed) + ran.nextInt(20);
                 RandomWorld worldmap = new RandomWorld(seed);
                 worldmap.NewGameprocedures();
             }
