@@ -1,4 +1,4 @@
 This is a Pac-man like game. It used java StdDraw and TETILE Engine provided by UCB.
 This is the first version of my first game, and there will be new functions and bug-fix coming.
 
-To start the game, go to game Core file and click on Game, run that javafile to start the game.
+To start the game, open the whole folder as a java project,go to game Core file and click on Game,and then run that javafile to start the game.
