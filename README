@@ -2,3 +2,12 @@ This is a Pac-man like game. It used java StdDraw and TETILE Engine provided by 
 This is the first version of my first game, and there will be new functions and bug-fix coming.
 
 To start the game, open the whole folder as a java project,go to game Core file and click on Game,and then run that javafile to start the game.
+
+
+After you run the program, the system will pop up a main menu where you can choose to either start a new game(n), load game(l), or quit(q). Inupt corresponding keyboard
+value to choose the option you want.
+
+If you start a new game, the program will ask you to input an integer with keyboard as a seed.
+
+After the world is genereated, you can operate the player (which is an @ sign) with basic WASD, and you can save and quit the game with q.
+If you have a saved game, choose load game in main menu and you can load your saved game. For now, cave man only support one archive.
